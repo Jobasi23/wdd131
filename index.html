@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>WDD 131-Dynamic Web Fundamentals-Joshua Ifeanyichukwu</title>
+    <meta description="WDD 131-Dynamic Web Fundamentals-Joshua Ifeanyichukwu-Home page">
+    <meta author="Joshua Ifeanyichukwu Obasi">
+</head>
+<body>
+    <header>
+        <h1>WDD 131:Dynamic Web Fundamentals-Joshua I. Obasi</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/joshua-obasi-766b60339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">scriptures</a></li>
+                <li><a href="final.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/jd.jpg" alt="People rafting down a river">
+            <p>My name is Joshua and I go by Jay. I was Born in Enugu State and live with my family in Osun State. I am currently working as an Indexer at Springborad. My wife is my world and I love spending time with her. I love to travel and I love to learn new things. </p>
+          </section>
+        
+          <section class="card">
+            <h2>Nigeria</h2>
+            <img src="images/nig.jpg" alt="Calm scenic river with rafts">
+            <p>Nigeria, an African country on the Gulf of Guinea, has many natural landmarks and wildlife reserves. Protected areas such as Cross River National Park and Yankari National Park have waterfalls, dense rainforest, savanna and rare primate habitats.</p>
+          </section>
+    </main>
+    <footer>
+        <p>
+             &copy; <span id="currentyear"></span> Joshua Ifeanyichukwu, Osun State, Nigeria.
+        </p>
+        <p id="lastModified"></p>
+        <script>
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentyear").textContent = currentYear;
+
+            const lastModified = document.lastModified;
+            document.getElementById("lastModified").textContent = `Last modified: ${lastModified}`;
+        </script>
+    </footer>
+</body>
+</html>
