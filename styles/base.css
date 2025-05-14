@@ -4,3 +4,173 @@
     box-sizing: border-box;
 }
 
+:root {
+    --Primary-color: #005994;
+    --Secondary-color: #000000b0;
+    --Accent1-color: hsl(54, 64%, 30%);
+    --Accent2-color: purple;
+    --white-color: #ffffff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--white-color);
+    color: var(--Primary-color);
+    font-weight: 400;
+}
+
+header h1 {
+    background-color: var(--Primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    padding: 1rem 2rem;
+    background-color: var(--Secondary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--Accent1-color);
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    list-style: none;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #fff;
+  }
+  
+  /* Header Styles */
+  .card h2 {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  
+  /* First Row: About Me Section */
+.row.first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.row.first-row img {
+    width: 150px;
+    height: auto;
+    margin-left: 1rem;
+    margin-top: 1rem; /* Added margin to move the image down */
+}
+  
+.row.first-row p {
+    flex: 1;
+    margin-right: 1rem;
+  }
+  
+  /* h3 centered with horizontal line */
+h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem 0 0.25rem 0;
+}
+
+hr {
+    width: 60%;          /* Adjust this percentage to make it shorter or longer */
+    margin: 1rem auto;   /* Centers the line */
+  }
+  
+
+  /* Second Row: Flag + Paragraph */
+.row.second-row {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+ }
+  
+.flag-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    margin-top: 3rem; /* Added margin to move the image down */
+}
+
+.flag-container img {
+    width: 100%;
+    height: auto;
+}
+  
+.caption {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 0.25rem;
+    text-align: center;
+}
+.description {
+    flex: 1;
+    margin-left: 1rem;
+    margin-top: 2rem; /* Added margin to move the text down */
+}
+  
+/* Web Dev Resources */
+.card ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    margin-top: 8rem; /* Added margin to move the list down */
+}
+
+.card ul li {
+    margin: 0.5rem 0;
+}
+
+.card ul li a {
+    color: purple;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--Primary-color);
+    color: var(--white-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}   

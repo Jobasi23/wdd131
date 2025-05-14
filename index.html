@@ -6,6 +6,11 @@
     <title>WDD 131-Dynamic Web Fundamentals-Joshua Ifeanyichukwu</title>
     <meta description="WDD 131-Dynamic Web Fundamentals-Joshua Ifeanyichukwu-Home page">
     <meta author="Joshua Ifeanyichukwu Obasi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,20 +26,44 @@
     </header>
     <main>
         <section class="card">
-            <h2>About Me</h2>
+          <h2>About Me</h2>
+          <div class="row first-row">
+            <p>
+              My name is Joshua and I go by Jay. I was Born in Enugu State and live with my family in Osun State. I am currently working as an Indexer at Springborad. My wife is my world and I love spending time with her. I love to travel and I love to learn new things.
+            </p>
             <img src="images/jd.jpg" alt="People rafting down a river">
-            <p>My name is Joshua and I go by Jay. I was Born in Enugu State and live with my family in Osun State. I am currently working as an Indexer at Springborad. My wife is my world and I love spending time with her. I love to travel and I love to learn new things. </p>
-          </section>
-        
-          <section class="card">
-            <h2>Nigeria</h2>
-            <img src="images/nig.jpg" alt="Calm scenic river with rafts">
-            <p>Nigeria, an African country on the Gulf of Guinea, has many natural landmarks and wildlife reserves. Protected areas such as Cross River National Park and Yankari National Park have waterfalls, dense rainforest, savanna and rare primate habitats.</p>
-          </section>
+          </div>
+      
+          <h3>Abuja, Nigeria</h3>
+          <hr>
+          <div class="row second-row">
+            <div class="flag-container">
+                <img src="images/nig.jpg" alt="Flag of Nigeria">
+                <p class="caption">Official Flag of Nigeria</p>
+            </div>
+            <p class="description">
+                Nigeria, an African country on the Gulf of Guinea, has many natural landmarks and wildlife reserves. 
+                Protected areas such as Cross River National Park and Yankari National Park have waterfalls, dense rainforest, 
+                savanna, and rare primate habitats.
+            </p>
+        </div>
+        </section>
+      
+        <section class="card">
+          <h2>Web Dev Resources</h2>
+          <ul>
+            <li><a href="final.html">Dev.to Community</a></li>
+            <li><a href="final.html">Smashing Magazine</a></li>
+            <li><a href="final.html">CSS Tricks</a></li>
+            <li><a href="final.html">W3 Schools</a></li>
+            <li><a href="final.html">Udemy</a></li>
+            <li><a href="final.html">Image Placeholder</a></li>
+          </ul>
+        </section>
     </main>
     <footer>
         <p>
-             &copy; <span id="currentyear"></span> Joshua Ifeanyichukwu, Osun State, Nigeria.
+             &copy; <span id="currentyear"></span> 🌳Joshua Ifeanyichukwu, Osun State, Nigeria. 🌳
         </p>
         <p id="lastModified"></p>
         <script>
