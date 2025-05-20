@@ -1,0 +1,37 @@
+main {
+    max-width: 100%; /* Extend to occupy the full screen width */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+main img {
+    width: 100%; /* Make images responsive to occupy full column width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+main h1 {
+    text-align: center;
+    margin: 1rem auto;
+    color: var(--Primary-color);
+}
+
+@media (min-width: 768px) {
+    .pictures {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for images */
+        grid-template-rows: auto 1fr; /* Add a row for the h1 */
+    }
+
+    main h1 {
+        grid-column: 1 / -1; /* Make h1 span across all columns */
+    }
+    .hamburger {
+        display: none; /* Hide hamburger button on desktop view */
+    }
+}
+
+
+
