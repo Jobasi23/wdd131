@@ -6,7 +6,7 @@ if (hamburgerButton && navMenu) {
         navMenu.classList.toggle('active');
 
         // Optional: toggle hamburger icon between ☰ and X
-        hamburgerButton.textContent = hamburgerButton.textContent === '☰' ? 'X' : '☰';
+        hamburgerButton.innerHTML = hamburgerButton.innerHTML.trim() === '☰' ? 'X' : '☰';
     });
 } else {
     console.error('Required elements not found in the DOM.');
