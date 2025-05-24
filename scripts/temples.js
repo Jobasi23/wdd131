@@ -1,13 +1,16 @@
-const hamburgerButton = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    const nav = document.querySelector('nav');
 
-if (hamburgerButton && navMenu) {
-    hamburgerButton.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-
-        // Optional: toggle hamburger icon between ☰ and X
-        hamburgerButton.innerHTML = hamburgerButton.innerHTML.trim() === '☰' ? 'X' : '☰';
-    });
-} else {
-    console.error('Required elements not found in the DOM.');
-}
+    if (hamburger && navMenu && nav) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            nav.classList.toggle('menu-open'); // 🔁 toggle a class here
+            // Optional: toggle hamburger icon between ☰ and X
+            hamburger.innerHTML = hamburger.innerHTML.trim() === '☰' ? 'X' : '☰';
+        });
+    } else {
+        console.error('Required elements not found in the DOM.');
+    }
+});
