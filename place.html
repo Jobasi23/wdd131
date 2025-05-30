@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta Description="WDD 131-Places">
+    <meta author="Joshua Ifeanyichukwu Obasi">
+    <title>Places</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/places.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main >
+        <p class="empty"></p>
+        <div class="Hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="A scenic view of Nigeria" width="1350" height="650">
+            </picture>
+
+            <section class="Data">
+                <h2>Data</h2>
+                <p>Area: 923,768sq km</p>
+                <p>Capital: Abuja</p>
+                <p>Population: Over 227,933,899 </p>
+                <p>Languages: English, Igbo, Hausa, Yoruba</p> 
+                <p>Currency: Naira (₦)</p>
+                <p>Time Zone: WAT</p>  
+                <p>Calling Code: +234</p>
+                <p>Internet TLD: .ng</p>
+            </section>
+
+            <section class="Weather">
+                <h2>Weather <img src="images/weather.svg" alt="Weather Icon" class="icon"></h2>
+                <p>Temperature: 23&#176;C</p>
+                <p>Conditions: Partly Cloudy</p>
+                <p>Wind: 5 km/h</p>
+                <p>Wind Chill: 26&#176;C </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+             &copy; <span id="currentyear"></span> 🌳Joshua Ifeanyichukwu, Osun State, Nigeria. 🌳
+        </p>
+        <p id="lastModified"></p>
+        <script>
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentyear").textContent = currentYear;
+
+            const lastModified = document.lastModified;
+            document.getElementById("lastModified").textContent = `Last modified: ${lastModified}`;
+        </script>
+    </footer>
+</body>
+</html>

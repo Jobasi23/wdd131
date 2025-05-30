@@ -1,0 +1,53 @@
+@media (min-width: 768px) {
+    .Hero {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .Hero picture img {
+        width: 50%;
+        height: auto;
+        display: block;
+    }
+
+    .Data, .Weather {
+        position: absolute;
+        width: 30%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        padding: 1rem;
+    }
+
+    .Data {
+        top: 20px;
+        left: 20px;
+    }
+
+    .Weather {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    section h2 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* aligns text and icon to the left */
+        gap: 0.5rem;
+        background-color: var(--Secondary-color);
+        color: var(--white-color);
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        transform: translateX(-10px);
+        width: calc(100% + 20px);
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 0.5rem;
+    }
+}

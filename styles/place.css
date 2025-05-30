@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Primary-color: #f52121;
+    --Secondary-color: rgb(41, 118, 41);
+    --black-color: #000000b0;
+    --white-color: #ffffff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-weight: 400;
+}
+
+header h1 {
+    background-color: var(--Primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.empty{
+    background-color: var(--Secondary-color);
+    padding: 0.5rem;
+} 
+
+section {
+    padding: 1rem;
+    width: 400px;
+}
+section h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+    background-color: var(--Secondary-color);
+    padding: 1rem 0.05rem;
+}
+
+section p {
+    margin: 0.5rem 0;
+}
+
+.Hero {
+    position: relative;
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.Hero picture,
+.Hero picture img {
+    width: 100%;
+    max-width: 1350px;
+    height: auto;
+    display: block;
+    object-fit: cover; /* optional */
+}
+
+.Data, .Weather {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Position Data section top-left */
+.Data {
+    top: 20px;
+    left: 20px;
+}
+
+/* Position Weather section bottom-right */
+.Weather {
+    bottom: 20px;
+    right: 20px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .Hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .Hero picture img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .Data, .Weather {
+        position: static;
+        width: 90%;
+        margin: 1rem auto;
+        box-shadow: none;
+        background-color: #ffffff;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    section h2 {
+    flex-direction: column;        /* Stack text and icon */
+    align-items: center;           /* Center horizontally */
+    justify-content: center;
+    gap: 0.25rem;
+    background-color: transparent; /* Remove background */
+    color: var(--black-color);     /* Text color for mobile */
+    transform: none;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--Primary-color);
+    color: var(--white-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}   
+
