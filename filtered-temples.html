@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temples</title>
+    <meta name="description" content="Temples-The Church of Jesus Christ of Latter-day Saints">
+    <meta name="author" content="Joshua Ifeanyichukwu Obasi">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temple.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Temple Album</h1>
+            <div class="nav-left"></div>
+                <button class="hamburger" aria-label="Toggle navigation">☰</button>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="temples.html">Home</a></li>
+                <li><a href="temples.html">Old</a></li>
+                <li><a href="final.html">New</a></li>
+                <li><a href="temples.html">Large</a></li>
+                <li><a href="temples.html">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="pictures">
+            
+        </div>
+    </main>
+    <footer>
+        <p>
+             &copy; <span id="currentyear"></span> 🌳Joshua Ifeanyichukwu, Osun State, Nigeria. 🌳
+        </p>
+        <p id="lastModified"></p>
+        <script>
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentyear").textContent = currentYear;
+
+            const lastModified = document.lastModified;
+            document.getElementById("lastModified").textContent = `Last modified: ${lastModified}`;
+        </script>
+    </footer>
+</body>
+</html>
